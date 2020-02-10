@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>MidwayUSA - Convert Time to Words</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+
+<div class="main">
+
+    <center>
+        <h1>Time to Text Conversion</h1>
+        <p>By Joel Abshier for MidwayUSA</p>
+
+    <form>
+        
+        <input type="number" min="1" max="12" id="hour" value="9">
+        <input type="number" min="0" max="59" id="minute" value="15">
+    
+    </form>
+    
+    <br />
+    
+    <h3>The Time Is... <span id="time"></span></h3>
+    <script type="text/javascript">
+    
+        window.onload = function()
+        {
+            convertTimeToWords( document.getElementById( 'hour' ).value, document.getElementById( 'minute' ).value );
+        };
+    
+    </script>   
+  
+    </center>
+
+</div>
+
+
+</body>
+
+<script src="script.js" type="text/javascript"></script>
+
+</html> 
